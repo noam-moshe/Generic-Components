@@ -1,21 +1,20 @@
 import React, { useEffect, useRef, useState } from 'react';
 
 const Components = [
-    { name: 'כרטיס נפתח', path: '/card' },
-    { name: 'טקסט זז', path: '/mooving-text' },
-    { name: 'סליידר למובייל', path: '/slider' },
-
+    { name: 'Drop-down Card', path: '/card' },
+    { name: 'Mooving Text', path: '/mooving-text' },
+    { name: 'Mobile Slider', path: '/slider' },
 ]
 
 
 const Card = (props) => {
 
     return (
-        <>
+        <div style={{display:'flex' , flexDirection:'column', alignItems:'center'}}>
             {Components.map((component, index) => {
-                return <div onClick={()=>{props.history.push(component.path)}} >{component.name}</div>
+                return <div className='componentName' onClick={()=>{props.history.push(component.path)}} >{component.name}</div>
             })}
-        </>
+        </div>
     );
 }
 

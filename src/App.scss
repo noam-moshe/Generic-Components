@@ -24,3 +24,16 @@ table , th , td{
 th{
   text-align: left;
 }
+
+.componentName{
+  font-size: 2rem;
+  cursor: pointer;
+  color: #0070a3;
+  transition: 0.4s ease;
+  padding: 0.5vh;
+
+  &:hover{
+    color: #043e58;
+    transform: scale(1.1);
+  }
+}
