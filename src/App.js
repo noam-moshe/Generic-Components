@@ -5,6 +5,8 @@ import loadable from '@loadable/component';
 
 const RenderMoovingText = loadable(() => import('./render-component/RenderMoovingText.jsx'));
 const RenderCard = loadable(() => import('./render-component/RenderCard.jsx'));
+const RenderSlider = loadable(() => import('./render-component/RenderSlider.jsx'));
+
 const Home = loadable(() => import('./Home.jsx'));
 
 
@@ -15,6 +17,7 @@ function App() {
         <Switch>
           <Route exact path='/card' component={RenderCard} />
           <Route exact path='/mooving-text' component={RenderMoovingText} />
+          <Route exact path='/slider' component={RenderSlider} />
 
           <Route path='/' component={Home}/>
         </Switch>

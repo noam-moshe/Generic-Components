@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 const Components = [
     { name: 'כרטיס נפתח', path: '/card' },
     { name: 'טקסט זז', path: '/mooving-text' },
+    { name: 'סליידר למובייל', path: '/slider' },
 
 ]
 
