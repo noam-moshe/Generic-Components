@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700&display=swap');
+
+#root{
+  overflow-y: hidden;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.App{
+  width: 100vw;
+  padding: 2vh 0;
+  font-family: 'Assistant', sans-serif;
+  overflow-x: hidden;
+}
+
+table , th , td{
+  border-collapse: collapse;
+  padding: 1vw;
+  border: 1px solid black;
+}
+
+th{
+  text-align: left;
+}
