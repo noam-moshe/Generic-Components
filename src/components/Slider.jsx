@@ -28,7 +28,7 @@ function Slider(props) {
     }
 
     return (
-        <Swipeable onSwiping={onSwiping} onSwiped={onSwiped} >
+        <Swipeable onSwiping={props.swipeWithFinger ? onSwiping : ()=>{}} onSwiped={onSwiped} >
             <div style={{ width: props.width || '100vw', overflow: 'hidden', direction: 'rtl' }}>
                 <div style={{
                     display: 'flex', width: 'fit-content',
