@@ -8,7 +8,8 @@ const RenderCard = () => {
 
     return (
         <div style={{ margin: 'auto', width: 'fit-content' }}>
-            <Card
+            <div style={{width:'fit-content' , margin:'auto'}}>
+                <Card
                 top={<div style={{ color: 'var(--custom-gray)' }}>כותרת לכרטיס הנפתח - לחץ כאן</div>}
                 isOpen={isOpen}
                 onChange={(e) => { setIsOpen(e) }}
@@ -25,6 +26,7 @@ const RenderCard = () => {
 
 
             </Card>
+            </div>
             <div style={{ direction: 'rtl', marginTop: '2vh' }}>
                 הכרטיס נשלט מבחוץ - עליכם להגדיר state שמחזיק boolean אותו מעבירים לכרטיס באמצעות isOpen. <br />
                 עליכם לשנות את אותו state כאשר הonChange נקרא.<br/>

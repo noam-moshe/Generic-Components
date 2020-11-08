@@ -10,6 +10,7 @@
 
 .App{
   width: 100vw;
+  height: 100vh;
   padding: 2vh 0;
   font-family: 'Assistant', sans-serif;
   overflow-x: hidden;
@@ -26,14 +27,41 @@ th{
 }
 
 .componentName{
-  font-size: 2rem;
+  font-size: 1.8rem;
   cursor: pointer;
-  color: #0070a3;
-  transition: 0.4s ease;
-  padding: 0.5vh;
+  color: white;
+  padding: 0.5vh 2vw;
+  background-color: #0070a3;
+  margin: 1vh;
+  border-radius: 7px;
+  transition: 0.3s ease;
 
   &:hover{
-    color: #043e58;
-    transform: scale(1.1);
+    background-color: rgb(5, 66, 94);
+    // transform: scale(1.1);
   }
 }
+
+.select{
+  padding: 0.5vh 1vw;
+  background-color: lightblue;
+  // border: 2px solid lightblue;
+  border-radius: 100px;
+}
+
+.optionsContainer{
+  border-radius: 5px;
+  box-shadow: 3px 3px 7px rgba(185, 188, 199, 0.575);
+  .option{
+    border-bottom: 1px solid rgba(185, 188, 199, 0.575);
+    padding: 0.5vh 1vw;
+    &:hover{
+      background-color: lightblue;
+    }
+    &:last-child{
+      border-bottom: none;
+    }
+  }
+}
+
+

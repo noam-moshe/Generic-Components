@@ -4,6 +4,7 @@ const Components = [
     { name: 'Drop-down Card', path: '/card' },
     { name: 'Mooving Text', path: '/mooving-text' },
     { name: 'Mobile Slider', path: '/slider' },
+    {name: 'Select' , path: '/select'}
 ]
 
 
