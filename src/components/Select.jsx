@@ -59,7 +59,7 @@ const Select = (props) => {
                                 key={index}
                                 onClick={() => {
                                     setSelectedOption(value.name)
-                                    props.onChoseOption(value)
+                                    props.onChange(value)
                                 }}>
                                 <div>
                                     {value.name}
