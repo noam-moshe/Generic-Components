@@ -18,12 +18,12 @@ const Move = ({ timeToStart, text, width, speed, rounds , containerClassName , t
     const move = () => {
         try {
             let maxWidth = ContainerRef.current.offsetWidth
-            let nameWidth = textRef.current.offsetWidth
-            if (nameWidth > maxWidth) {
+            let textWidth = textRef.current.offsetWidth
+            if (textWidth > maxWidth) {
                 let counter = 0
                 interval = setInterval(() => {
                     let margin = Number(textRef.current.style.marginRight.replace('px', ''))
-                    if (margin * -1 > nameWidth) {
+                    if (margin * -1 > textWidth) {
                         if (counter !== 0 && counter === Number(rounds) - 1) {
                             textRef.current.style.marginRight = 0
                             clearInterval(interval)
