@@ -9,9 +9,9 @@ const RenderMoovingText = () => {
             <div style={{ width: 'fit-content', margin: 'auto', backgroundColor: 'lightblue', borderRadius: '100px', padding: '0.5vh 0.5vw' }}>
                 <MoovingText
                     rounds={2}
-                    speed={4}
+                    speed={1.2}
                     text={"מסביב לעולם בשמונים יום - מאת ז'ול וורן"}
-                    timeToStart={2000}
+                    timeToStart={1500}
                     width='200px'
                     textClassName=''
                     containerClassName=''
@@ -26,7 +26,7 @@ const RenderMoovingText = () => {
                            בשביל אינסוף סיבובים - לשים 0.`,
                     default: 'null'
                 },
-                { props: 'speed',type:'Number', info: 'מהירות הסיבובים', default: '4' },
+                { props: 'speed',type:'Number', info: 'מהירות הסיבובים', default: '1' },
                 { props: 'timeToStart',type:'Number', info: 'הזמן (ms) שהטקסט יחכה לפני שהוא יתחיל את הסיבוב הראשון שלו', default: '1000' },
                 { props: 'width',type:'String', info: 'רוחב הdiv הכללי שעוטף את הטקסט, אם הטקסט יוצא מגבולות הdiv הזה, הוא יתחיל לזוז.', default: '20vw' },
                 { props: 'containerClassName',type:'String', info: 'ה className של הdiv הגדול', default: 'null' },

@@ -34,7 +34,7 @@ const Move = ({ timeToStart, text, width, speed, rounds , containerClassName , t
                         return
                     }
                     textRef.current.style.marginRight = margin - 1 + 'px'
-                }, Number(speed || 4) * 10)
+                }, 1/(Number(speed) || 1) * 30)
             }
         }
 
