@@ -1,13 +1,13 @@
 import React from 'react'
-import MoovingText from '../components/MoovingText'
+import MovingText from '../components/MovingText'
 import Table from '../Table'
 
-const RenderMoovingText = () => {
+const RenderMovingText = () => {
 
     return (
         <>
             <div style={{ width: 'fit-content', margin: 'auto', backgroundColor: 'lightblue', borderRadius: '100px', padding: '0.5vh 0.5vw' }}>
-                <MoovingText
+                <MovingText
                     rounds={2}
                     speed={1.2}
                     text={"מסביב לעולם בשמונים יום - מאת ז'ול וורן"}
@@ -37,4 +37,4 @@ const RenderMoovingText = () => {
     );
 }
 
-export default RenderMoovingText;
+export default RenderMovingText;

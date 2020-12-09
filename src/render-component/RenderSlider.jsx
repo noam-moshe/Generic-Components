@@ -9,14 +9,13 @@ import three from '../icons/three.svg'
 
 const RenderCard = () => {
 
-    const [isOpen, setIsOpen] = useState(false)
-
     return (
         <div style={{ margin: 'auto', width: 'fit-content' }}>
-            <div style={{ margin: 'auto', width: 'fit-content', border: '1px solid black', height: 'fit-content' }}>
+            <div style={{ margin: 'auto', width: 'fit-content', border: '1px solid gray', height: 'fit-content' }}>
                 <Slider
+                    arrows={true}
                     width='300px'
-                    itemWidth='200px'
+                    itemWidth='180px'
                     swipeWithFinger={true}
                     items={[
                         <div style={{ display: 'flex', justifyContent: 'center' }} >
@@ -33,7 +32,7 @@ const RenderCard = () => {
             </div>
 
             <div style={{ direction: 'rtl', marginTop: '2vh' }}>
-                סליידר לmobile בלבד <br />
+                <strong>סליידר לmobile בעיקר </strong><br />
                 על ידי החלקה (swipe) או לחיצה על הפריט הבא, נגיע אליו.<br />
                 (אל תדאגו, אם יש onClick לפריט צדדי, הוא לא יופעל)
             </div>
@@ -41,6 +40,7 @@ const RenderCard = () => {
                 info={[
                     { props: 'items', type: 'array', info: 'מערך שמקבל את תוכן הסליידר - כל איבר במערך הוא פריט אחד בסליידר.', default: 'null' },
                     { props: 'sideBounce', type: 'Number', info: 'רמת הקפיציות כאשר מגיעים לקצה הסליידר.', default: '6' },
+                    { props: 'arrows', type: 'boolean', info: 'אם true, יופיעו בצדדים חיצים שבלחיצה עליהם יהיה ניתן לשלוט בפריטי הסליידר', default: 'null' },
                     { props: 'speed', type: 'String', info: 'מהירות המעבר בין פריט לפריט לאחר ההחלקה', default: '0.5s' },
                     { props: 'width', type: 'String', info: 'הרוחב הכללי של הסליידר', default: '100vw' },
                     { props: 'itemWidth', type: 'String', info: 'רוחב הפריטים בסליידר (אם רוצים לראות קצת מהפריטים האחרים בסליידר, כמו בדוגמא, הרוחב של הפריטים צריך להיות קטן יותר מרוחב הסליידר)', default: '70vw' },

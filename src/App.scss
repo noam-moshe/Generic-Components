@@ -8,12 +8,37 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+ 
+::-webkit-scrollbar-track {
+  border-radius: 100px;
+  background-color: rgb(235, 235, 235);
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: lightblue;
+  border-radius: 100px;
+}
+
 .App{
   width: 100vw;
   height: 100vh;
   padding: 2vh 0;
   font-family: 'Assistant', sans-serif;
   overflow-x: hidden;
+}
+
+.loading{
+  border-radius: 50%;
+  border-style: solid;
+  border-right-color: transparent !important;
+}
+
+@keyframes loading {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
 }
 
 table , th , td{

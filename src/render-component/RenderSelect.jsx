@@ -25,7 +25,7 @@ const RenderSelect = () => {
                 <Select
                     placeHolder='בחר כיתה'
                     options={Grades}
-                    width='15vw'
+                    width='130px'
                     onChange={(value) => {
                     }}
                 />

@@ -8,28 +8,28 @@ const RenderCard = () => {
 
     return (
         <div style={{ margin: 'auto', width: 'fit-content' }}>
-            <div style={{width:'fit-content' , margin:'auto'}}>
+            <div style={{ width: 'fit-content', margin: 'auto' }}>
                 <Card
-                top={<div style={{ color: 'var(--custom-gray)' }}>כותרת לכרטיס הנפתח - לחץ כאן</div>}
-                isOpen={isOpen}
-                onChange={(e) => { setIsOpen(e) }}
-                speed={2}
-                relativeSpeed={true}
-                width={'50vw'}
-                background={'lightblue'}
+                    top={<div style={{ color: 'var(--custom-gray)' }}>כותרת לכרטיס הנפתח - לחץ כאן</div>}
+                    isOpen={isOpen}
+                    onChange={(e) => { setIsOpen(e) }}
+                    speed={2}
+                    relativeSpeed={true}
+                    width={'50vw'}
+                    background={'lightblue'}
 
-            >
+                >
 
+                    תוכן הכרטיס <br />
                 תוכן הכרטיס <br />
                 תוכן הכרטיס <br />
-                תוכן הכרטיס <br />
 
 
-            </Card>
+                </Card>
             </div>
             <div style={{ direction: 'rtl', marginTop: '2vh' }}>
                 הכרטיס נשלט מבחוץ - עליכם להגדיר state שמחזיק boolean אותו מעבירים לכרטיס באמצעות isOpen. <br />
-                עליכם לשנות את אותו state כאשר הonChange נקרא.<br/>
+                עליכם לשנות את אותו state כאשר הonChange נקרא.<br />
                 עליכם לעטוף את תוכן הכרטיס בקומפוננטה.
                 שימו לב - אם תוכן הכרטיס משתנה, גודל הכרטיס הפתוח לא משתנה בהתאם.
             </div>
